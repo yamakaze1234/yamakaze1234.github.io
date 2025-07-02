@@ -381,7 +381,7 @@
 <li><p>Landtrendr 算法的优点是可同时监测出森林干扰和恢复发生的时间、地点、面积和强度，可通过设置光谱时间轨迹的参数减少时间分割过程中出现的过拟合问题和背景噪声，适用于同源遥感数据。</p>
 </li>
 <li><p>Landtrendr 算法的核心思想是将原始复杂的时间序列轨迹，通过滤波和分隔简化为一组连续、正常的序列，然后对分隔后的分段进行线性拟合，提出重点信息。</p>
-<img src="/2025/04/27/GEE的Landtrendr和CCDC算法计算植被扰动/img" style="zoom:80%;"></li>
+<img src="/2025/04/27/GEE%E7%9A%84Landtrendr%E5%92%8CCCDC%E7%AE%97%E6%B3%95%E8%AE%A1%E7%AE%97%E6%A4%8D%E8%A2%AB%E6%89%B0%E5%8A%A8/04/27/GEE的Landtrendr和CCDC算法计算植被扰动/img" style="zoom:80%;"></li>
 </ol>
 <h3><span id="landtrendr%E7%AE%97%E6%B3%95%E7%9B%B8%E5%85%B3%E6%88%90%E6%9E%9C"><strong>Landtrendr算法相关成果</strong></span></h3><p>Kennedy R E, Yang Z, Cohen W B. Detecting trends in forest disturbance and recovery using yearly Landsat time series: 1. LandTrendr—Temporal segmentation algorithms[J]. Remote Sensing of Environment, 2010, 114(12): 2897-2910.</p>
 <p>苏文瑞, 田佳, 杨泽康, 等. 基于GEE和LandTrendr的宁夏“三山”森林干扰监测[J]. 中国水土保持科学(中英文), 2022, 20(06): 41-49.</p>
@@ -439,7 +439,7 @@
 
 <h1><span id="ccdc">CCDC</span></h1><h2><span id="%E7%AE%97%E6%B3%95%E4%BB%8B%E7%BB%8D">算法介绍</span></h2><h3><span id="ccdc%E7%AE%80%E4%BB%8B">CCDC简介</span></h3><p>连续变化检测与分类（ContinuousChangeDetectionandClassification,CCDC）是一种土地变化监测算法，旨在对卫星数据的时间<br>序列进行操作，特别是Landsat数据。CCDC包括两个部分，其一是变化检测算法(ChangeDetectionComponent,CCD)，其二是分<br>类算法(Classification)。</p>
 <p>CCDC组件负责检测地表的变化情况，主要基于时间序列的光谱变化来识别土地覆盖或土地利用的变化。它使用了一个连续的时间序列分<br>析方法，通过对每个像素点拟合一个时间序列模型，来描述每个像素随时间的变化趋势，并检测那些不符合预期模型的行为，从而识<br>别出变化的发生。当模型检测到光谱特征发生显著变化时，认为该像素发生了变化（如土地利用变更、森林砍伐等）。</p>
-<img src="/2025/04/27/GEE的Landtrendr和CCDC算法计算植被扰动/img" style="zoom:80%;">
+<img src="/2025/04/27/GEE%E7%9A%84Landtrendr%E5%92%8CCCDC%E7%AE%97%E6%B3%95%E8%AE%A1%E7%AE%97%E6%A4%8D%E8%A2%AB%E6%89%B0%E5%8A%A8/04/27/GEE的Landtrendr和CCDC算法计算植被扰动/img" style="zoom:80%;">
 
 <h3><span id="ccdc%E7%AE%97%E6%B3%95%E7%9B%B8%E5%85%B3%E6%88%90%E6%9E%9C">CCDC算法相关成果</span></h3><p>Zhu Z, Woodcock C E. Continuous change detection and classification of land cover using all available Landsat data[J]. Remote sensing of Environment, 2014, 144: 152-171.</p>
 <p> Zhu Z. Change detection using landsat time series: A review of frequencies, preprocessing, algorithms, and applications[J]. ISPRS Journal of Photogrammetry and Remote Sensing, 2017, 130: 370-384.</p>
